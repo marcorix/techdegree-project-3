@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>The Code Review</title>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>the Code review</h1>
+    </div>
+
+
+
+    <form action="index.html" method="POST">
+
+
+
+        <div class="description">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+        <div class="line1"></div>
+        <div class="line2"></div>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <div class="container">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required">
+            </div>
+
+            <div class="container">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="user_email" placeholder="Required">
+            </div>
+
+            <div class="container">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
+            </div>
+
+            <div class="container">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address" placeholder="Please enter number and street">
+            </div>
+
+            <div class="container">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city" placeholder="Please enter your City's name">
+            </div>
+
+            <div class="container">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option id="default-state" value="" disabled selected>Choose State</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Portugall">Portugall</option>
+                </select>
+            </div>
+
+            <div class="container">
+                <label for="zipcode">Zip Code</label><br>
+                <input type="text" id="zipcode" name="user_zipcode" placeholder="Zip Code #">
+            </div>
+
+        </fieldset>
+        <div class="line2"></div>
+        <fieldset>
+            <legend>Newsletter</legend>
+
+            <p>Select the newsletter you would like to recieve</p><br>
+            <input type="checkbox" id="html" name="newsletter" value="html" checked>
+            <label for="html">HTML News</label><br>
+
+            <input type="checkbox" id="css" name="newsletter" value="css">
+            <label for="css">CSS News</label><br>
+
+            <input type="checkbox" id="js" name="newsletter" value="js">
+            <label for="js">Javascript News</label><br><br>
+
+            <p>Newsletter Format</p><br>
+            <input type="radio" id="html_format" name="newsletter_format" value="html_format" checked>
+            <label for="html_format">HTML</label><br>
+
+            <input type="radio" id="text_format" name="newsletter_format" value="text_format">
+            <label for="html_format">Plain Text</label><br><br>
+
+            <label for="other_topics">Other topics you'd like to here about:</label>
+            <textarea name="other_topics" id="other_topics" rows="7" placeholder="Place your text here.."></textarea>
+
+            <button type="submit">Sign Up</button>
+
+        </fieldset>
+
+
+
+
+    </form>
+    <footer>Copyright &copy; The Code Review</footer>
+
+</body>
+
+</html>

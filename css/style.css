@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: grey;
+    font-family: 'Andika New Basic', sans-serif;
+
+}
+
+h2{
+    color: rgb(19, 31, 41);
+    margin: 10px 0;
+}
+
+.line1 {
+    background-color: rgb(19, 31, 41);
+    height: 4px;
+    max-width: 90%;
+    margin: 10px auto 4px;
+}
+.line2 {
+    background-color: rgb(19, 31, 41);
+    height: 2px;
+    max-width: 90%;
+    margin: 0 auto 2em;
+    
+}
+
+.title {
+    background-color: rgb(19, 31, 41);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+}
+.description {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    margin: 0 auto;
+    max-width: 90%;
+}
+legend {
+    color:  rgb(19, 31, 41);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    margin-bottom: 1.5em;
+    padding: 12px;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 3px;
+    
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0px 8px 16px 0;
+}
+
+#name::placeholder,
+#email::placeholder {
+    text-align: right;
+    
+}
+input::placeholder {
+    font-style: italic;
+    color: rgb(159, 159, 159);
+    text-align: left;
+}
+
+
+#zipcode {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+button {
+    width: 100%;
+    background-color: rgb(2, 174, 177);
+    color: white;
+    padding: .8em 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5em;
+    padding: .8em;
+    font-style: italic;
+}
+input:focus, textarea:focus {
+    background-color: rgb(190, 250, 222);
+    
+}
+
+
+/** MEDIA QUERY MIN-WIDTH 768PX **/
+
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    input,
+    select {
+       flex-basis: 75%;
+    }
+    .container label {
+        margin-top: 7px;
+        flex-basis: 25%;
+    }
+    #zipcode {
+        flex-basis: 25%;
+    }
+  
+}
