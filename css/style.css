@@ -46,6 +46,7 @@ h2{
 form {
     max-width: 700px;
     margin: auto;
+    background-color: rgb(255, 244, 240);
 }
 
 fieldset {
@@ -107,6 +108,11 @@ button {
     border: none;
     border-radius: 3px;
     font-size: 1.5em;
+    margin-bottom: 30px;
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 footer {
@@ -117,8 +123,11 @@ footer {
 }
 input:focus, textarea:focus {
     background-color: rgb(190, 250, 222);
+    transition-duration: .5s;
     
 }
+
+
 
 
 /** MEDIA QUERY MIN-WIDTH 768PX **/
